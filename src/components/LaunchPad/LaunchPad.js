@@ -39,16 +39,16 @@ const LaunchPad = () => {
         <div className="m-0 p-0">
             <div className="launchPadHero w-[95vw] h-[80vh] mt-[14vh] mx-auto relative rounded-md text-center">
                 {/* <img src={scribble} className="w-1/3" alt="background"></img> */}
-                <div className="absolute top-32 sm:top-[100px] sm:left-44 ">
-                    <h1 className="text-3xl sm:text-5xl font-playfair font-semibold py-4 text-[#116b89]">
+                <div className="absolute top-32 sm:top-[100px] sm:left-44 launchpadHerotext">
+                    <h1 className="text-3xl sm:text-5xl font-playfair font-semibold py-4 text-[#116b89] rounded-full p-4 ">
                         Lost LaunchPad 2.0
                     </h1>
 
-                    <p className="text-xl font-medium text-[#ffffff]">
+                    <p className="text-xl font-medium sm:text-[#ffffff] lg:text-[#000000]">
                         Travel | Wellness | Adventure
                     </p>
                 </div>
-                <p className="text-2xl absolute sm:right-10 sm:top-10 font-playfair text-[#ffffff]">
+                <p className="text-2xl absolute sm:right-10 sm:top-10 font-playfair text-[#ffffff] quote">
                     "Igniting Entrepreneurial Dreams"
                 </p>
             </div>
@@ -136,12 +136,15 @@ const LaunchPad = () => {
 
             </section>
             <section className="flex flex-wrap justify-center items-center pt-8 space-y-4 lg:space-y-0 px-5 sm:px-28">
-                <h2 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">Success Stories</h2>
+                <h2 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">Speakers & Itinerary</h2>
                 <br />
-                <p className="text-[#4c4e4e]">Learn from those who've transformed ideas into successful ventures, including our very own success story of opening three backpacker hostels in Sri Lanka within six months.</p>
+                <br />
+                {/* <p className="text-[#4c4e4e]">Will be announced soon</p> */}
             </section>
-            <section className="flex flex-wrap justify-center items-center lg:space-y-0 px-5 pb-8 sm:px-28">
-                {/* coursel of success stories with rounded border image and text below image */}
+            <section className="flex flex-wrap justify-center items-center p-8 space-y-4 lg:space-y-0 px-5 sm:px-28">
+                <h2 className="text-xl font-playfair font-semibold py-4 text-[#4c4e4e]">Will be announced soon</h2>
+            </section>
+            {/* <section className="flex flex-wrap justify-center items-center lg:space-y-0 px-5 pb-8 sm:px-28">
                 <section className="flex flex-wrap justify-center items-center p-8 space-y-4 lg:space-y-0">
                     <div className="w-full sm:w-1/2 lg:w-1/3 justify-center">
                         <div className=" mx-auto flex flex-col">
@@ -162,14 +165,14 @@ const LaunchPad = () => {
                         </div>
                     </div>
                 </section>
-            </section>
-            <section className="flex flex-wrap justify-center items-center p-8 space-y-4 lg:space-y-0 px-5 sm:px-28 bg-[#116b89]">
+            </section> */}
+            <section section className="flex flex-wrap justify-center items-center p-8 space-y-4 lg:space-y-0 px-5 sm:px-28 bg-[#116b89]" >
                 <p className="text-[#ffffff] text-center">We're looking for 20 passionate individuals ready to embark on this journey. If you have an innovative idea in travel, wellness, or adventure, we want to hear from you. Apply through the link in our bio and let's make dreams a reality together.
                 </p>
                 <br /><br /><br />
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScG0FtpY-7kKgGCGVyoVtEjc-QFwQ4kFucEU3AZkF-2KFavLw/viewform
  "className="hover:bg-[#00ADA0] hover:text-[#C7F8FF] px-4 py-2 rounded-lg bg-[#ffffff] ">Apply Now</a>
-            </section>
+            </section >
             <section className="flex flex-wrap justify-center items-center pt-8 space-y-4 lg:space-y-0 px-5 sm:px-28">
                 <h2 className="text-3xl font-playfair font-semibold  text-[#116b89]">Sponsors</h2>
                 <br />
@@ -222,7 +225,7 @@ const LaunchPad = () => {
                     <p>contact@losttraverse.com</p>
                 </div>
             </section>
-        </div>
+        </div >
     );
 };
 

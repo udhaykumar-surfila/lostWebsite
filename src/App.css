@@ -337,13 +337,52 @@ input[type="date"] {
 }
 
 .launchPadHero {
-  background: url("./img/launchpadv1.png");
+  background: url("./img/launchpadHero.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   margin: 12px;
   padding: 12px;
+}
+
+.launchpadHerotext {
+  position: absolute;
+  top: 66vh !important;
+  left: 3vw !important;
+}
+
+.launchpadHerotext p {
+  color: black !important;
+}
+
+.quote {
+  font-weight: bolder !important;
+  font-size: xx-large !important;
+  margin-top: -15px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .launchPadHero {
+    background-position: right;
+  }
+
+  .launchpadHerotext {
+    top: 52vh;
+
+    margin: 3vh;
+  }
+  .launchpadHerotext p {
+    color: white !important;
+  }
+
+  .launchPadHero h1 {
+    background-color: #f9f871 !important;
+  }
+
+  .quote {
+    margin-top: -6px !important;
+  }
 }
 
 .manaliHero {

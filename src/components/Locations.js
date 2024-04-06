@@ -45,11 +45,33 @@ const Locations = () => {
         className='mySwiper locationslider'
       >
         <SwiperSlide>
+          <Link to='/hostel/arugambay'>
+            <div className='overflow-hidden rounded-md w-full h-full'>
+              <img
+                src={arugambay}
+                alt='Arugam Bay'
+                className='rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in'
+              />
+            </div>
+            <div className='bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md'>
+              <h3 className=' text-[#116b89] font-playfair font-semibold text-lg mb-1'>
+                Arugam Bay, Sri lanka
+              </h3>
+              <p className='text-sm text-[#4c4e4e]'>
+                Near Arugambay's lively surf, the hostel offers a calm escape with a garden, yoga space, indoor activities, and shared dorms.
+              </p>
+              <button className='font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89]   decoration-[1.5px]'>
+                Know More
+              </button>
+            </div>
+          </Link>
+        </SwiperSlide>
+        <SwiperSlide>
           <HashLink to='/hostelnew/manali'>
             <div className='overflow-hidden rounded-md w-full h-full relative ribbon ribbon-top-left'>
-              <div className='absolute top-2 rounded left-2 w-12 h-6 bg-white z-10 text-[#116b89] text-xs font-semibold py-1 shadow-lg border border-[#116b89]'>
+              {/* <div className='absolute top-2 rounded left-2 w-12 h-6 bg-white z-10 text-[#116b89] text-xs font-semibold py-1 shadow-lg border border-[#116b89]'>
                 NEW!
-              </div>
+              </div> */}
               <img
                 src={manalihero}
                 alt='manali'
@@ -71,30 +93,7 @@ const Locations = () => {
             </div>
           </HashLink>
         </SwiperSlide>
-        <SwiperSlide className='relative'>
-          <Link to='/hostel/weligama'>
-            <div className='overflow-hidden rounded-md w-full h-full'>
-              <img
-                src={weligamaimg}
-                alt='weligamaimg'
-                className='rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in'
-              />
-            </div>
-            <div className='bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md'>
-              <h3 className=' text-[#116b89] font-playfair font-semibold text-lg mb-1'>
-                Weligama, Sri Lanka
-              </h3>
-              <p className='text-sm text-[#4c4e4e]'>
-                50m from the bustling surfers paradise of Weligama beach, the
-                hostel offers peaceful accommodation with a garden, yoga area,
-                indoor games and shared dorms
-              </p>
-              <button className='font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-in'>
-                Know More
-              </button>
-            </div>
-          </Link>
-        </SwiperSlide>
+
         <SwiperSlide>
           <Link to='/hostel/hiriketiya'>
             <div className='overflow-hidden rounded-md w-full h-full'>
@@ -190,28 +189,31 @@ const Locations = () => {
             </div>
           </Link>
         </SwiperSlide>
-        <SwiperSlide>
-          <Link to='/hostel/arugambay'>
+        <SwiperSlide className='relative'>
+          <Link to='/hostel/weligama'>
             <div className='overflow-hidden rounded-md w-full h-full'>
               <img
-                src={arugambay}
-                alt='Arugam Bay'
+                src={weligamaimg}
+                alt='weligamaimg'
                 className='rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in'
               />
             </div>
             <div className='bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md'>
               <h3 className=' text-[#116b89] font-playfair font-semibold text-lg mb-1'>
-                Arugam Bay, Sri lanka
+                Weligama, Sri Lanka
               </h3>
               <p className='text-sm text-[#4c4e4e]'>
-                Near Arugambay's lively surf, the hostel offers a calm escape with a garden, yoga space, indoor activities, and shared dorms.
+                50m from the bustling surfers paradise of Weligama beach, the
+                hostel offers peaceful accommodation with a garden, yoga area,
+                indoor games and shared dorms
               </p>
-              <button className='font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89]   decoration-[1.5px]'>
+              <button className='font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-in'>
                 Know More
               </button>
             </div>
           </Link>
         </SwiperSlide>
+
         <SwiperSlide>
           <Link to='/hostelnew/varkala'>
             <div className='overflow-hidden rounded-md w-full h-full'>

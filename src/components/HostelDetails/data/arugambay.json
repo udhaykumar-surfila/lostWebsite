@@ -1,10 +1,10 @@
 {
     "gallery": {
-        "photo1": "https://img.freepik.com/free-photo/tropical-beach-with-palm-sri-lanka_167946-162.jpg?w=996&t=st=1692722789~exp=1692723389~hmac=50e793438cc1deb0ef886907ad613ebd2c9c5b85bbaf2c4a6fe3c374a88806f3",
-        "photo2": "https://img.freepik.com/free-photo/man-running-with-surfboard-while-woman-relaxing-beach-during-sunset_107420-10038.jpg?1&w=1380&t=st=1694166662~exp=1694167262~hmac=2de33b6e19e5964832fe29e49a8b84c38157b67ca1ea562a40b14519771bc787",
+        "photo1": "/arugam-3.JPG",
+        "photo2": "/arugam-4.jpeg",
         "photo3": "https://img.freepik.com/free-photo/girl-posing-with-board-sunset_1321-1353.jpg?w=1060&t=st=1692722956~exp=1692723556~hmac=3c0f9afc57d9dbbfc1da5bb07ff67c67c3f7dd31603400e16c36cc37f788bb12",
         "photo4": "https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/3/321018/q9ypqpo0xvhzdij1rkyw",
-        "photo5": "https://img.freepik.com/free-photo/closeup-dj-working-blue-light_181624-18773.jpg?w=1380&t=st=1694166334~exp=1694166934~hmac=011f3b8b70539a1dbcfb32ea91f1768e1f6c8dbbb5df93692bf013c3a4b31982"
+        "photo5": "/arugam-1.JPG"
     },
     "about": {
         "header": "Lost Hostel, Arugam Bay, Sri Lanka",
@@ -20,48 +20,8 @@
             },
             {
                 "icon": "Beach",
-                "distance": "300 m",
-                "place": "Arugam Bay Surf"
-            },
-            {
-                "icon": "Beach",
-                "distance": "350 m",
-                "place": "Hangten Rooftop"
-            },
-            {
-                "icon": "Eatery",
-                "distance": "1.2 km",
-                "place": "Ceylon Sliders"
-            },
-            {
-                "icon": "Eatery",
-                "distance": "2.3km",
-                "place": "Fisherman's Bay Surf"
-            },
-            {
-                "icon": "Eatery",
-                "distance": "2.8 km",
-                "place": "Tiki Bar"
-            },
-            {
-                "icon": "Eatery",
-                "distance": "5.2 km",
-                "place": "Shady Lane"
-            },
-            {
-                "icon": "Beach",
-                "distance": "5.5 km",
-                "place": "Midigama Beach"
-            },
-            {
-                "icon": "Beach",
-                "distance": "5.8 km",
-                "place": "Mirissa Beach"
-            },
-            {
-                "icon": "Beach",
-                "distance": "6.3 km",
-                "place": "Turtle Beach"
+                "distance": "7.2 km",
+                "place": "Elephat Rock"
             }
         ],
         "mapLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.374477343041!2d81.8299188!3d6.845632099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae5bd481c0c18ed%3A0xc37971eb12d3dcb3!2sThe%20Lost%20Hostels%2C%20Arugam%20Bay%20Beach%20-%20Sri%20Lanka!5e0!3m2!1sen!2sin!4v1711587792642!5m2!1sen!2sin"

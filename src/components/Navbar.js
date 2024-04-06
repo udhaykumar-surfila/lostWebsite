@@ -8,8 +8,8 @@ const Navbar = () => {
   const [isPhoneNavOpen, setIsPhoneNavOpen] = useState(false);
   const navItems = [
     {
-      title: "Home",
-      link: "/#home",
+      title: "Launchpad",
+      link: "/launchpad",
     },
 
     /*  {
