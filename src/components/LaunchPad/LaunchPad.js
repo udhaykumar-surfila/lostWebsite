@@ -40,7 +40,7 @@ const LaunchPad = () => {
             <div className="launchPadHero w-[95vw] h-[80vh] mt-[14vh] mx-auto relative rounded-md text-center">
                 {/* <img src={scribble} className="w-1/3" alt="background"></img> */}
                 <div className="absolute top-32 sm:top-[100px] sm:left-44 launchpadHerotext">
-                    <h1 className="text-3xl sm:text-5xl font-playfair font-semibold py-4 text-[#116b89] rounded-full p-4 ">
+                    <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89] rounded-full p-4 ">
                         Lost LaunchPad 2.0
                     </h1>
 
