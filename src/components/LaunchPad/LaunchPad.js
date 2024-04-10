@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from 'react';
 import beachImage from "../../img/yoga.webp";
 import yoga1 from "../../img/yoga1.svg";
 import yoga2 from "../../img/yoga2.svg";
@@ -48,7 +48,7 @@ import itenary8Webp from "../../img/launchpad/8.webp";
 import itenary9Webp from "../../img/launchpad/9.webp";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 
 // Import Swiper styles
 import "swiper/css";
@@ -61,6 +61,13 @@ import 'swiper/css/pagination';
 import { EffectCards } from "swiper/modules";
 
 const LaunchPad = () => {
+    const progressCircle = useRef(null);
+    const progressContent = useRef(null);
+    const [isAutoplayRunning, setIsAutoplayRunning] = useState(true);
+    const onAutoplayTimeLeft = (s, time, progress) => {
+        progressCircle.current.style.setProperty('--progress', 1 - progress);
+        progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+    };
     return (
         <div className="m-0 p-0">
             <div className="launchPadHero w-[95vw] h-[80vh] mt-[14vh] mx-auto relative rounded-md text-center">
@@ -134,7 +141,7 @@ const LaunchPad = () => {
                     <img
                         src={experiential}
                         alt="Experiential Learning"
-                        className="rounded-full w-40 h-40 mx-auto hover:opacity-80 transition-opacity duration-300 ease-in-out"
+                        className="rounded-full w-60 h-60 mx-auto hover:opacity-80 transition-opacity duration-300 ease-in-out"
                     />
                     <p className="mt-2 font-medium ">Experiential Learning</p>
                     <p className="text-gray-500">Participate in workshops and sessions designed to refine your business acumen.</p>
@@ -143,7 +150,7 @@ const LaunchPad = () => {
                     <img
                         src={networking}
                         alt="Networking Opportunities"
-                        className="rounded-full w-40 h-40 object-cover mx-auto hover:opacity-80 transition-opacity duration-300 ease-in-out"
+                        className="rounded-full w-60 h-60 object-cover mx-auto hover:opacity-80 transition-opacity duration-300 ease-in-out"
                     />
                     <p className="mt-2 font-medium">Networking Opportunities</p>
                     <p className="text-gray-500">
@@ -154,7 +161,7 @@ const LaunchPad = () => {
                     <img
                         src={investment}
                         alt="Investment Potential"
-                        className="rounded-full w-40 h-40 object-cover mx-auto hover:opacity-80 transition-opacity duration-300 ease-in-out"
+                        className="rounded-full w-60 h-60 object-cover mx-auto hover:opacity-80 transition-opacity duration-300 ease-in-out"
                     />
                     <p className="mt-2 font-medium">Investment Potential</p>
                     <p className="text-gray-500">Pitch your ideas for a chance to secure investment from us.</p>
@@ -193,7 +200,13 @@ const LaunchPad = () => {
                         pagination={{
                             type: 'progressbar',
                         }}
-                        modules={[EffectCoverflow, Pagination]}
+                        autoplay={{
+                            delay: 5000,
+                            disableOnInteraction: true,
+                        }}
+                        onAutoplayStop={() => { setIsAutoplayRunning(false) }}
+                        onAutoplayTimeLeft={onAutoplayTimeLeft}
+                        modules={[Autoplay, EffectCoverflow, Pagination]}
                         className="mySwiper"
                     >
                         <SwiperSlide>
@@ -215,23 +228,48 @@ const LaunchPad = () => {
                             </picture>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={iternary4Png} alt="iternary4" className="w-full h-full" />
+                            <picture>
+                                <source srcSet={itenary4Webp} type="image/webp" />
+                                <img src={iternary4Png} alt="iternary4" className="w-full h-full" />
+                            </picture>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={iternary5Png} alt="iternary5" className="w-full h-full" />
+                            <picture>
+                                <source srcSet={itenary5Webp} type="image/webp" />
+                                <img src={iternary5Png} alt="iternary5" className="w-full h-full" />
+                            </picture>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={iternary6Png} alt="iternary6" className="w-full h-full" />
+                            <picture>
+                                <source srcSet={itenary6Webp} type="image/webp" />
+                                <img src={iternary6Png} alt="iternary6" className="w-full h-full" />
+                            </picture>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={iternary7Png} alt="iternary7" className="w-full h-full" />
+                            <picture>
+                                <source srcSet={itenary7Webp} type="image/webp" />
+                                <img src={iternary7Png} alt="iternary7" className="w-full h-full" />
+                            </picture>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={iternary8Png} alt="iternary8" className="w-full h-full" />
+                            <picture>
+                                <source srcSet={itenary8Webp} type="image/webp" />
+                                <img src={iternary8Png} alt="iternary8" className="w-full h-full" />
+                            </picture>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src={iternary9Png} alt="iternary9" className="w-full h-full" />
+                            <picture>
+                                <source srcSet={itenary9Webp} type="image/webp" />
+                                <img src={iternary9Png} alt="iternary9" className="w-full h-full" />
+                            </picture>
                         </SwiperSlide>
+                        {isAutoplayRunning &&
+                            <div className="autoplay-progress" slot="container-end">
+                                <svg viewBox="0 0 48 48" ref={progressCircle}>
+                                    <circle cx="24" cy="24" r="20"></circle>
+                                </svg>
+                                <span ref={progressContent}></span>
+                            </div>}
                     </Swiper>
                 </div>
             </section>
