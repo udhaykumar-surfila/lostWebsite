@@ -53,7 +53,7 @@ const Navbar = () => {
 
       {isPhoneNavOpen && (
         <div class="block md:flex md:items-center md:justify-between w-full flex-1 bg-none fixed top-16 z-[99] bg-[#116b89]">
-          <div class="flex md:hidden bg-transparent flex-col md:flex-row md:items-center mx-5">
+          <div class="flex md:hidden bg-transparent flex-col md:flex-row md:items-center mx-5 my-8">
             {navItems.map(({ title, link }) => {
               return (
                 <HashLink

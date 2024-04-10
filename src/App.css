@@ -365,10 +365,11 @@ input[type="date"] {
 @media screen and (max-width: 768px) {
   .launchPadHero {
     background-position: right;
+    -webkit-background-postion: revert;
   }
 
   .launchpadHerotext {
-    top: 54vh !important;
+    top: 49vh !important;
 
     margin: 3vh;
   }
@@ -534,4 +535,22 @@ input[type="date"] {
 
 .scribble {
   background-image: url("./img/scribble.png");
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
 }

@@ -26,11 +26,37 @@ import logo from "../../img/logo.png";
 
 import arrow from "../../img/left arrow.png";
 
+//itenary images import
+import iternary1Png from "../../img/launchpad/1.png";
+import iternary2Png from "../../img/launchpad/2.png";
+import iternary3Png from "../../img/launchpad/3.png";
+import iternary4Png from "../../img/launchpad/4.png";
+import iternary5Png from "../../img/launchpad/5.png";
+import iternary6Png from "../../img/launchpad/6.png";
+import iternary7Png from "../../img/launchpad/7.png";
+import iternary8Png from "../../img/launchpad/8.png";
+import iternary9Png from "../../img/launchpad/9.png";
+
+import itenary1Webp from "../../img/launchpad/1.webp";
+import itenary2Webp from "../../img/launchpad/2.webp";
+import itenary3Webp from "../../img/launchpad/3.webp";
+import itenary4Webp from "../../img/launchpad/4.webp";
+import itenary5Webp from "../../img/launchpad/5.webp";
+import itenary6Webp from "../../img/launchpad/6.webp";
+import itenary7Webp from "../../img/launchpad/7.webp";
+import itenary8Webp from "../../img/launchpad/8.webp";
+import itenary9Webp from "../../img/launchpad/9.webp";
+
 import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
+
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
 
 import { EffectCards } from "swiper/modules";
 
@@ -136,14 +162,80 @@ const LaunchPad = () => {
 
             </section>
             <section className="flex flex-wrap justify-center items-center pt-8 space-y-4 lg:space-y-0 px-5 sm:px-28">
-                <h2 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">Speakers & Itinerary</h2>
+                <h2 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">Speakers</h2>
                 <br />
                 <br />
                 {/* <p className="text-[#4c4e4e]">Will be announced soon</p> */}
             </section>
+
             <section className="flex flex-wrap justify-center items-center p-8 space-y-4 lg:space-y-0 px-5 sm:px-28">
                 <h2 className="text-xl font-playfair font-semibold py-4 text-[#4c4e4e]">Will be announced soon</h2>
             </section>
+            <section className="flex flex-wrap justify-center items-center pt-8 space-y-4 lg:space-y-0 px-5 sm:px-28">
+                <h2 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">Itinerary</h2>
+                <br />
+                <br />
+            </section>
+            <section className="flex flex-wrap justify-center items-center p-8 space-y-4 lg:space-y-0 px-5 sm:px-28">
+                <div className="w-full sm:w-1/2 lg:w-1/3 justify-center">
+                    <Swiper
+                        effect={'coverflow'}
+                        grabCursor={true}
+                        centeredSlides={true}
+                        slidesPerView={'auto'}
+                        coverflowEffect={{
+                            rotate: 50,
+                            stretch: 0,
+                            depth: 100,
+                            modifier: 1,
+                            slideShadows: true,
+                        }}
+                        pagination={{
+                            type: 'progressbar',
+                        }}
+                        modules={[EffectCoverflow, Pagination]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide>
+                            <picture>
+                                <source srcSet={itenary1Webp} type="image/webp" />
+                                <img src={iternary1Png} alt="iternary1" className="w-full h-full" />
+                            </picture>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <picture>
+                                <source srcSet={itenary2Webp} type="image/webp" />
+                                <img src={iternary2Png} alt="iternary2" className="w-full h-full" />
+                            </picture>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <picture>
+                                <source srcSet={itenary3Webp} type="image/webp" />
+                                <img src={iternary3Png} alt="iternary3" className="w-full h-full" />
+                            </picture>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={iternary4Png} alt="iternary4" className="w-full h-full" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={iternary5Png} alt="iternary5" className="w-full h-full" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={iternary6Png} alt="iternary6" className="w-full h-full" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={iternary7Png} alt="iternary7" className="w-full h-full" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={iternary8Png} alt="iternary8" className="w-full h-full" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={iternary9Png} alt="iternary9" className="w-full h-full" />
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
+            </section>
+
             {/* <section className="flex flex-wrap justify-center items-center lg:space-y-0 px-5 pb-8 sm:px-28">
                 <section className="flex flex-wrap justify-center items-center p-8 space-y-4 lg:space-y-0">
                     <div className="w-full sm:w-1/2 lg:w-1/3 justify-center">
