@@ -66,6 +66,13 @@ const Hero = () => {
       checkoutDate: false,
     });
 
+    if (formData.hostel === "thelosthostelsgoapalolembeach") {
+      window.open(
+        `https://bookingengine.stayflexi.com/?hotel_id=27992`,
+        "_blank"
+      );
+    }
+
     window.open(
       `https://live.ipms247.com/booking/mroominfo.php?HotelId=${formData.hostel
       }&eZ_chkout=${formatDate(formData.checkOutDate)}&eZ_chkin=${formatDate(
