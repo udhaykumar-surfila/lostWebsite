@@ -167,12 +167,12 @@ const Hero = () => {
               >
                 Varkala, Kerela
               </option>
-              {/* <option
-                value="thelosthostelsbirbillinglandingsite"
+              <option
+                value="thelosthostelsarugambaysrilanka"
                 className="text-black"
               >
                 Arugam bay, Sri lanka
-              </option> */}
+              </option>
               <option value="185812" className="text-black">
                 Weligama, Sri Lanka
               </option>
