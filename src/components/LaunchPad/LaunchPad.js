@@ -15,6 +15,11 @@ import img2 from "../../img/yogaimg2.JPG";
 import img3 from "../../img/yogaimg3.JPG";
 import img4 from "../../img/yogaimg4.JPG";
 
+import speaker1 from "../../img/launchpad/speaker1.jpg";
+import speaker2 from "../../img/launchpad/speaker2.jpg";
+import speaker3 from "../../img/launchpad/speaker3.jpg";
+import speaker4 from "../../img/launchpad/speaker4.jpg";
+
 import vertical1 from "../../img/launchpad-vertical-1.jpeg"
 import vertical2 from "../../img/launchpad-vertical-2.jpeg"
 import vertical3 from "../../img/launchpad-vertical-3.jpeg"
@@ -175,8 +180,53 @@ const LaunchPad = () => {
                 {/* <p className="text-[#4c4e4e]">Will be announced soon</p> */}
             </section>
 
-            <section className="flex flex-wrap justify-center items-center p-8 space-y-4 lg:space-y-0 px-5 sm:px-28">
-                <h2 className="text-xl font-playfair font-semibold py-4 text-[#4c4e4e]">Will be announced soon</h2>
+            <section className="flex flex-wrap justify-center items-center p-8 space-y-4 lg:space-y-0 px-5 sm:px-28" id="speakers-pc">
+                <Swiper
+                    effect={'coverflow'}
+                    grabCursor={true}
+                    centeredSlides={true}
+                    slidesPerView={'auto'}
+                    initialSlide={1}
+                    coverflowEffect={{
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    }}
+                    pagination={true}
+                    modules={[EffectCoverflow, Pagination]}
+                    className="mySwiper">
+                    <SwiperSlide>
+                        <img src={speaker2} alt="speaker2" className="w-full h-full" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={speaker3} alt="speaker3" className="w-full h-full" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={speaker4} alt="speaker4" className="w-full h-full" />
+                    </SwiperSlide>
+                </Swiper>
+            </section>
+            <section className="flex flex-wrap justify-center items-center p-8 space-y-4 lg:space-y-0 px-5 sm:px-28" id="speakers-mobile">'
+                <div className="w-full sm:w-1/2 lg:w-1/3 justify-center">
+                    <div className=" mx-auto flex flex-col">
+                        <img src={speaker2} alt="yoga1" className="h-2/3 w-2/3 mx-auto" />
+                        {/* <p className="text-[#116b89] text-center p-2"> Speaker 1</p> */}
+                    </div>
+                </div>
+                <div className="w-full sm:w-1/2 lg:w-1/3 justify-center">
+                    <div className=" mx-auto flex flex-col">
+                        <img src={speaker3} alt="yoga1" className="h-2/3 w-2/3 mx-auto" />
+                        {/* <p className="text-[#116b89] text-center p-2"> Speaker 2</p> */}
+                    </div>
+                </div>
+                <div className="w-full sm:w-1/2 lg:w-1/3 justify-center">
+                    <div className=" mx-auto flex flex-col">
+                        <img src={speaker4} alt="yoga1" className="h-2/3 w-2/3 mx-auto" />
+                        {/* <p className="text-[#116b89] text-center p-2"> Speaker 3</p> */}
+                    </div>
+                </div>
             </section>
             <section className="flex flex-wrap justify-center items-center pt-8 space-y-4 lg:space-y-0 px-5 sm:px-28">
                 <h2 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">Itinerary</h2>

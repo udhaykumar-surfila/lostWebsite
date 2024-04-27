@@ -584,3 +584,39 @@ input[type="date"] {
   stroke-dasharray: 125.6;
   transform: rotate(-90deg);
 }
+
+#speakers .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#speakers-pc .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 500px !important;
+  height: 500px;
+}
+
+#speakers-pc .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+#speakers-pc .swiper-pagination-bullet-active {
+  background-color: #2d6a87 !important;
+}
+
+#speakers-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #speakers-pc {
+    display: none;
+  }
+
+  #speakers-mobile {
+    display: block;
+  }
+}
