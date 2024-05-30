@@ -92,6 +92,12 @@ const Footer = () => {
           <ul>
             <li className='text-sm'>Contact Us</li>
             <li className='text-sm text-[#8cb6c4]'>
+              For India:
+              <span onClick={() => openWhatsAppChat('+919773312999')} style={{ cursor: 'pointer' }}>
+                +91 9773312999
+              </span>
+            </li>
+            {/* <li className='text-sm text-[#8cb6c4]'>
               Varkala:
               <span
                 onClick={() => openWhatsAppChat('+917012416343')}
@@ -144,7 +150,7 @@ const Footer = () => {
               >
                 +91 7807770049
               </span>
-            </li>
+            </li> */}
             <div class='flex items-center mt-2'>
               <a
                 rel='noopener noreferrer'
