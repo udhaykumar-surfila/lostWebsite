@@ -114,7 +114,7 @@ const Footer = () => {
               >
                 +91 9307762867
               </span>
-            </li>
+            </li> */}
             <li className='text-sm text-[#8cb6c4]'>
               Arugam Bay:
               <span
@@ -142,7 +142,7 @@ const Footer = () => {
                 +94 74 220 4478
               </span>
             </li>
-            <li className='text-sm text-[#8cb6c4]'>
+            {/* <li className='text-sm text-[#8cb6c4]'>
               Manali:
               <span
                 onClick={() => openWhatsAppChat('+919307762867')}
