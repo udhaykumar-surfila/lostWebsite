@@ -48,66 +48,66 @@ const appRouter = createBrowserRouter([
         path: '/',
         element: <Body />,
       },
-      {
-        path: '/hostel/:id',
-        element: <HostelDetails />,
-      },
-      {
-        path: '/hostelnew/manali',
-        element: <Manali />,
-      },
-      {
-        path: '/hostelnew/varkala',
-        element: <Varkala />,
-      },
-      {
-        path: '/workwithus',
-        element: <WorkWithUsPage />,
-      },
-      {
-        path: '/terms',
-        element: <Terms />,
-      },
-      {
-        path: '/privacy',
-        element: <Privacy />,
-      },
-      {
-        path: '/guest',
-        element: <Guest />,
-      },
-      {
-        path: '/cancellation',
-        element: <Cancellation />,
-      },
-      {
-        path: '/tourgroups',
-        element: <TourGroups />,
-      },
-      {
-        path: '/blog',
-        element: <AllPosts />,
-      },
-      {
-        path: '/blog/:slug',
-        element: <OnePost />,
-      },
-      {
-        path: '/merch',
-        element: <Merch />,
-      },
-      {
-        path: '/yoga',
-        element: <YogaSchoolPage />,
-      },
-      {
-        path: '/launchpad',
-        element: <LaunchPad />
-      },
-      {
-        path: '/ourstory',
-        element: <Timeline />,
-      },
+      // {
+      //   path: '/hostel/:id',
+      //   element: <HostelDetails />,
+      // },
+      // {
+      //   path: '/hostelnew/manali',
+      //   element: <Manali />,
+      // },
+      // {
+      //   path: '/hostelnew/varkala',
+      //   element: <Varkala />,
+      // },
+      // {
+      //   path: '/workwithus',
+      //   element: <WorkWithUsPage />,
+      // },
+      // {
+      //   path: '/terms',
+      //   element: <Terms />,
+      // },
+      // {
+      //   path: '/privacy',
+      //   element: <Privacy />,
+      // },
+      // {
+      //   path: '/guest',
+      //   element: <Guest />,
+      // },
+      // {
+      //   path: '/cancellation',
+      //   element: <Cancellation />,
+      // },
+      // {
+      //   path: '/tourgroups',
+      //   element: <TourGroups />,
+      // },
+      // {
+      //   path: '/blog',
+      //   element: <AllPosts />,
+      // },
+      // {
+      //   path: '/blog/:slug',
+      //   element: <OnePost />,
+      // },
+      // {
+      //   path: '/merch',
+      //   element: <Merch />,
+      // },
+      // {
+      //   path: '/yoga',
+      //   element: <YogaSchoolPage />,
+      // },
+      // {
+      //   path: '/launchpad',
+      //   element: <LaunchPad />
+      // },
+      // {
+      //   path: '/ourstory',
+      //   element: <Timeline />,
+      // },
     ],
   },
 ]);
@@ -120,12 +120,12 @@ function App() {
 
   return (
     <Wrapper>
-      <div className="font-dmsans top-4">
+      <div className="font-dmsans top-4 h-100">
 
-        <Navbar />
+        {/* <Navbar /> */}
         {/* <Popup /> */}
         <Outlet />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Wrapper>
   );

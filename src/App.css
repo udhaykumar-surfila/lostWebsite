@@ -611,6 +611,52 @@ input[type="date"] {
   display: none;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+body {
+  background-color: black;
+  color: white;
+  align-content: center;
+  justify-content: center;
+  font-family: Montserrat;
+}
+*::selection {
+  color: #a6f;
+}
+p {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  translate: -50% -50%;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: white;
+  font-size: 2vw;
+  font-family: Space Grotesk;
+  transition: transform 0.3s ease;
+}
+
+p:hover {
+  transform: scale(1.4);
+}
+
+h1 {
+  transition: transform 2s ease;
+  font-weight: 100;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 70vw;
+  font-family: "DM Sans", sans-serif;
+  font-size: 5vw;
+}
+h1:hover {
+  transition: transform 5s ease;
+  transform: scale(1.1);
+}
+
 @media screen and (max-width: 768px) {
   #speakers-pc {
     display: none;

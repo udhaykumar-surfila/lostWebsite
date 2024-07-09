@@ -8,14 +8,15 @@ import Testimonials from "./Testimonials";
 
 const Body = () => {
   return (
-    <div>
-      <Hero />
-      <Events/>
-      <Locations />
-      <Gallery />
+    <div className="flex h-100 justify-center">
+      <h1 className="text-center">"There comes a time when you have to choose between turning the page and closing the book"</h1>
+      {/* <Hero /> */}
+      {/* <Events/> */}
+      {/* <Locations /> */}
+      {/* <Gallery /> */}
       {/* <Testimonials /> */}
-      
-      <Featured/>
+
+      {/* <Featured/> */}
     </div>
   );
 };
